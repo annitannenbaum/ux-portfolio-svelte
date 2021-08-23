@@ -1,30 +1,28 @@
 <script lang="ts">
-	export let name: string;
+	  import { Router, Route, Link } from "svelte-routing";
+	  import About from "./pages/about.svelte";
+	  import Landing from "./pages/landing.svelte";
+
+	  export let url = "";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<Router>
+	<nav>
+		<Link to="about" class="link">About me</Link>
+		<Link to="/" class="link"></Link>
+	</nav>
+
+	<main>
+		<Route path="/" component={Landing}></Route>
+		<Route path="about" component={About}/>
+	</main>
+</Router>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+
+	nav {
+		float: right;
+		padding: 4rem;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
