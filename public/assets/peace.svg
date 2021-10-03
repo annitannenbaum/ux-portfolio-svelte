@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45.124" height="66.088" viewBox="0 0 45.124 66.088"><defs><style>.a,.b,.e{fill:none;}.a,.b,.c{stroke:#c7b0ae;stroke-width:2px;}.a{stroke-linecap:round;}.c{fill:#7260c8;}.d{stroke:none;}</style></defs><g transform="matrix(1, 0.017, -0.017, 1, -751.89, -292.823)"><path class="a" d="M2931.76,1491.368s-5.544-23.1-5.489-25.529,1.089-3.8,3.92-4.273,4.668,1.481,5.3,4.273,5.31,22.474,5.979,22.452,6.169-25,6.169-25a4.363,4.363,0,0,1,4.819-2.673c3.785.4,4.467,2.864,4.213,4.263-.235,1.294-3.07,11.061-3.473,12.635" transform="translate(-2167.809 -1179.927)"/><g class="b" transform="translate(792.184 300.1)"><rect class="d" width="8" height="16" rx="4"/><rect class="e" x="1" y="1" width="6" height="14" rx="3"/></g><path class="a" d="M2968,1746.419s3.182,4.1,1.053,16.195-18.15,17.016-28.772,10.844-11.151-27.626-7.39-28.155,12.148-5.724,19.208.318-4.516,8.2-7.187,8.141-5.979,4.961-5.979,4.961" transform="translate(-2168.257 -1432.296)"/><g class="c" transform="translate(783.184 297.1)"><rect class="d" width="9" height="19" rx="4.5"/><rect class="e" x="1" y="1" width="7" height="17" rx="3.5"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="45.112" height="66.087" viewBox="0 0 45.112 66.087">
+  <g id="Peace_icon" data-name="Peace icon" transform="translate(-911.531 -523.157)">
+    <g id="Peace" transform="matrix(1, 0.017, -0.017, 1, 159.654, 230.334)">
+      <path id="Pfad_283" data-name="Pfad 283" d="M2931.954,1492.11s-5.739-23.841-5.683-26.271,1.089-3.8,3.92-4.273,4.668,1.481,5.3,4.273,5.31,22.474,5.979,22.452,6.169-25,6.169-25a4.363,4.363,0,0,1,4.819-2.673c3.785.4,4.467,2.864,4.213,4.263-.235,1.294-3.34,12.556-3.743,14.13" transform="translate(-2167.809 -1179.927)" fill="none" stroke="#c7b0ae" stroke-linecap="round" stroke-width="2"/>
+      <g id="Rechteck_45" data-name="Rechteck 45" transform="translate(792.184 300.1)" fill="none" stroke="#c7b0ae" stroke-width="2">
+        <rect width="8" height="16" rx="4" stroke="none"/>
+        <rect x="1" y="1" width="6" height="14" rx="3" fill="none"/>
+      </g>
+      <path id="Pfad_284" data-name="Pfad 284" d="M2967.837,1746.107s3.344,4.41,1.215,16.507-18.15,17.016-28.772,10.844-11.151-27.626-7.39-28.155,12.148-5.724,19.208.318-4.516,8.2-7.187,8.141-5.979,4.961-5.979,4.961" transform="translate(-2168.257 -1432.296)" fill="none" stroke="#c7b0ae" stroke-linecap="round" stroke-width="2"/>
+      <g id="Rechteck_44" data-name="Rechteck 44" transform="translate(783.184 297.1)" fill="none" stroke="#c7b0ae" stroke-width="2">
+        <rect width="9" height="19" rx="4.5" stroke="none"/>
+        <rect x="1" y="1" width="7" height="17" rx="3.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
