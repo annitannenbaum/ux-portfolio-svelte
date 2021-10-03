@@ -2,27 +2,38 @@
 	  import { Router, Route, Link } from "svelte-routing";
 	  import About from "./pages/about.svelte";
 	  import Landing from "./pages/landing.svelte";
+		import UI_UX from "./pages/ui_ux.svelte";
+		import Illustrations from "./pages/illustrations.svelte";
+		import Branding from "./pages/branding.svelte";
 
 	  export let url = "";
 </script>
 
 <Router>
 	<nav>
-		<Link to="about" class="link">About me</Link>
 		<Link to="/" class="link"></Link>
+		<Link to="about" class="link">About me</Link>
+		<Link to="ui_ux" class="link">UI/UX</Link>
+		<Link to="illustrations" class="link">Illustrations</Link>
+		<Link to="branding" class="link">Branding</Link>
 	</nav>
 
 	<main>
 		<Route path="/" component={Landing}></Route>
 		<Route path="about" component={About}/>
+		<Route path="ui_ux" component={UI_UX}/>
+		<Route path="illustrations" component={Illustrations}/>
+		<Route path="branding" component={Branding}/>
 	</main>
 </Router>
 
 <style>
 
 	nav {
-		float: right;
-		padding: 4rem;
+		width: 100%;
+		padding: 4rem 0;
+		display: flex;
+		justify-content: flex-end;
 	}
 
 </style>
