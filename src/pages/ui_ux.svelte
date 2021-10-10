@@ -9,13 +9,14 @@
   <div class="ui-container">
     <div class="left-content">
       <div class="description">
-        <h4>Plant Lover</h4>
+        <h3>Plant Lover</h3>
         <p>
           A platform to get information on how to care for your houseplants,
           which you can then share with your neighbors so you can go on vacation knowing your garden
           is well taken care of.
         </p>
       </div>
+      <img class="visual" src="/assets/visual.png" alt="Plant Lover Visual">
       <div class="color-palette">
         <div class="color light-green"></div>
         <div class="color teal"></div>
@@ -23,9 +24,19 @@
         <div class="color grey"></div>
         <div class="color beige"></div>
       </div>
+      <div class="fonts">
+        <span class="font-description">Wire one</span><span class="wire-one">Plant Lover</span><br>
+        <span class="font-description">Corbel</span><span class="corbel">Monstera Deliciosa</span>
+      </div>
+    </div>
+    <div class="middle-content">
+      <img class="cover" src="/assets/cover.png" alt="Plant Lover Cover Screen">
+      <img class="overview" src="/assets/overview.png" alt="Plant Lover Garden Overview">
+      <img class="detail" src="/assets/detail.png" alt="Plant Lover Plant Detail View">
+      <img class="dashboard" src="/assets/dashboard.png" alt="Plant Lover Dashboard">
     </div>
     <div class="right-content">
-
+      <img class="mockup" src="/assets/mockup.png" alt="Plant Lover Mockup">
     </div>
   </div>
 </main>
@@ -39,12 +50,14 @@
     padding: 0 5rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
   }
 
-  .description {
-    width: 25%;
+  .left-content, .middle-content, .right-content {
+    width: calc(33% - 5rem);
+    margin: 0 1rem;
   }
+
   .color-palette {
     display: flex;
     flex-direction: row;
@@ -59,6 +72,9 @@
     height: 50px;
     border-radius: 10px;
     margin: .5rem;
+    box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
   }
 
   .light-green {
@@ -79,6 +95,98 @@
 
   .beige {
     background-color: #FCFAF2;
+  }
+
+  .visual {
+    width: 310px;
+    border-radius: 10px;
+    height: auto;
+    margin: 1rem 0;
+    box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+  }
+
+  .fonts {
+    margin: 2rem 0;
+  }
+
+  .font-description {
+    font-size: 20px;
+    margin-right: 1rem;
+    text-align: center;
+  }
+
+  .wire-one {
+    font-family: 'Wire One';
+    font-size: 32px;
+    color: #497373;
+    letter-spacing: 1px;
+  }
+
+  .corbel {
+    font-family: 'Corbel';
+    font-size: 32px;
+    color: #497373;
+  }
+
+  .middle-content {
+    position: relative;
+    margin-top: 3.5rem;
+  }
+
+  .cover, .overview, .dashboard, .detail {
+    height: 450px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+  }
+
+  .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .overview {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+  }
+
+  .detail {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+  }
+
+  .dashboard {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+  }
+
+  .mockup {
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    margin-top: 3.5rem;
+    float: right;
+    box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .ui-container {
+      flex-direction: column;
+      }
+
+    .left-content, .middle-content, .right-content {
+      width: 100%;
+    }
   }
 
 </style>
