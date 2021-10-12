@@ -48,4 +48,15 @@
                 margin-left: 10rem;
                 margin-bottom: 12rem;
         }
+
+        @media screen and (max-width: 1024px) {
+                .about-container {
+                        flex-direction: column;
+                }
+
+                .paragraph-container {
+                        width: 100%;
+                        margin: 0;
+                }
+  }
 </style>

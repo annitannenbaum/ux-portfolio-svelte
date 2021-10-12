@@ -11,11 +11,11 @@
 
 <Router>
 	<nav>
-		<Link to="/" class="link"></Link>
-		<Link to="about" class="link">About me</Link>
-		<Link to="ui_ux" class="link">UI/UX</Link>
-		<Link to="illustrations" class="link">Illustrations</Link>
-		<Link to="branding" class="link">Branding</Link>
+		<Link to="/"></Link>
+		<Link to="about">About me</Link>
+		<Link to="ui_ux">UI/UX</Link>
+		<Link to="illustrations">Illustrations</Link>
+		<Link to="branding">Branding</Link>
 	</nav>
 
 	<main>
@@ -34,6 +34,12 @@
 		padding: 4rem 0;
 		display: flex;
 		justify-content: flex-end;
+	}
+
+	@media screen and (max-width: 900px) {
+		nav {
+			padding: 8rem 0 0;
+		}
 	}
 
 </style>

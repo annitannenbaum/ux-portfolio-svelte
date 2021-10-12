@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501.652" height="127" viewBox="0 0 501.652 127">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#51b5a8"/>
+      <stop offset="0.569" stop-color="#7756cc"/>
+      <stop offset="1" stop-color="#593f9f"/>
+      <stop offset="1" stop-color="#7e54f5"/>
+      <stop offset="1" stop-color="#7567a2"/>
+      <stop offset="1" stop-color="#807270"/>
+    </linearGradient>
+  </defs>
+  <path id="Pfad_285" data-name="Pfad 285" d="M0,0H501.652S362.6,118.375,185.159,55.076,0,127,0,127Z" fill="url(#linear-gradient)"/>
+</svg>

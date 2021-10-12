@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="519.652" height="145" viewBox="0 0 519.652 145">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#51b5a8"/>
+      <stop offset="0.569" stop-color="#7756cc"/>
+      <stop offset="1" stop-color="#593f9f"/>
+      <stop offset="1" stop-color="#7e54f5"/>
+      <stop offset="1" stop-color="#7567a2"/>
+      <stop offset="1" stop-color="#807270"/>
+    </linearGradient>
+    <filter id="Pfad_281" x="0" y="0" width="519.652" height="145" filterUnits="userSpaceOnUse">
+      <feOffset dy="-1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Pfad_281)">
+    <path id="Pfad_281-2" data-name="Pfad 281" d="M501.652,127H0S139.049,8.625,316.493,71.924,501.652,0,501.652,0Z" transform="translate(9 10)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
