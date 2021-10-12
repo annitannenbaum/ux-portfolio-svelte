@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap');
 
 html, body {
-	position: relative;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -9,7 +8,7 @@ html, body {
 }
 
 body {
-	background-image: linear-gradient(#51B5A8, #7E54F5);
+	background: linear-gradient(#51B5A8, #7E54F5);
 	color: #333;
 	margin: 0;
 	box-sizing: border-box;
@@ -83,7 +82,7 @@ button:focus {
 }
 
 .background-layer {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -93,7 +92,8 @@ button:focus {
 }
 
 .left-corner-gradient {
-	position: absolute;
+	position: fixed;
+	z-index: 9;
 	left: 0;
 	top: 0;
 	width: 500px;
@@ -102,14 +102,11 @@ button:focus {
 }
 
 .right-corner-gradient {
-	position: absolute;
+	position: fixed;
+	z-index: 9;
 	bottom: 0;
 	right: 0;
 	width: 500px;
 	height: 125px;
 	background-image: url("assets/right-corner.svg");
-}
-
-@media screen and (max-width: 1024px) {
-
 }

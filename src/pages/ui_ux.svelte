@@ -29,14 +29,16 @@
         <span class="font-description">Corbel</span><span class="corbel">Monstera Deliciosa</span>
       </div>
     </div>
-    <div class="middle-content">
-      <img class="cover" src="/assets/cover.png" alt="Plant Lover Cover Screen">
-      <img class="overview" src="/assets/overview.png" alt="Plant Lover Garden Overview">
-      <img class="detail" src="/assets/detail.png" alt="Plant Lover Plant Detail View">
-      <img class="dashboard" src="/assets/dashboard.png" alt="Plant Lover Dashboard">
-    </div>
     <div class="right-content">
-      <img class="mockup" src="/assets/mockup.png" alt="Plant Lover Mockup">
+      <div class="screens">
+        <img class="cover" src="/assets/cover.png" alt="Plant Lover Cover Screen">
+        <img class="overview" src="/assets/overview.png" alt="Plant Lover Garden Overview">
+        <img class="detail" src="/assets/detail.png" alt="Plant Lover Plant Detail View">
+        <img class="dashboard" src="/assets/dashboard.png" alt="Plant Lover Dashboard">
+      </div>
+      <div class="mockup-container">
+        <img class="mockup" src="/assets/mockup.png" alt="Plant Lover Mockup">
+      </div>
     </div>
   </div>
 </main>
@@ -50,12 +52,19 @@
     padding: 0 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
-  .left-content, .middle-content, .right-content {
+  .left-content {
     width: calc(33% - 5rem);
     margin: 0 1rem;
+  }
+
+  .right-content {
+    width: calc(66% - 5rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .color-palette {
@@ -98,7 +107,8 @@
   }
 
   .visual {
-    width: 310px;
+    width: 90%;
+    max-width: 400px;
     border-radius: 10px;
     height: auto;
     margin: 1rem 0;
@@ -130,14 +140,18 @@
     color: #497373;
   }
 
-  .middle-content {
+  .screens {
     position: relative;
     margin-top: 3.5rem;
+    margin-right: 3rem;
+    width: 50%;
   }
 
   .cover, .overview, .dashboard, .detail {
-    height: 450px;
-    width: auto;
+    height: auto;
+    width: 60%;
+    max-width: 250px;
+    position: absolute;
     border-radius: 10px;
     box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
     -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
@@ -145,38 +159,40 @@
   }
 
   .cover {
-    position: absolute;
     left: 0;
     top: 0;
   }
 
   .overview {
-    position: absolute;
+    left: 50px;
+    top: 25px;
+  }
+
+  .detail {
     left: 100px;
     top: 50px;
   }
 
-  .detail {
-    position: absolute;
-    left: 200px;
-    top: 100px;
+  .dashboard {
+    left: 150px;
+    top: 75px;
   }
 
-  .dashboard {
-    position: absolute;
-    left: 300px;
-    top: 150px;
+  .mockup-container {
+    width: 50%;
   }
 
   .mockup {
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
+    max-width: 400px;
     height: auto;
     margin-top: 3.5rem;
     float: right;
     box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
     -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
     -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+
   }
 
   @media screen and (max-width: 1024px) {
@@ -184,7 +200,7 @@
       flex-direction: column;
       }
 
-    .left-content, .middle-content, .right-content {
+    .left-content, .right-content {
       width: 100%;
     }
   }

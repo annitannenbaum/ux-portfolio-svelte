@@ -36,4 +36,10 @@
 		justify-content: flex-end;
 	}
 
+	@media screen and (max-width: 900px) {
+		nav {
+			padding: 8rem 0 0;
+		}
+	}
+
 </style>
