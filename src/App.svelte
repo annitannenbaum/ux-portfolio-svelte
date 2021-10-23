@@ -5,18 +5,7 @@
 		import UI_UX from "./pages/ui_ux.svelte";
 		import Illustrations from "./pages/illustrations.svelte";
 		import Branding from "./pages/branding.svelte";
-		import Redirect from "./pages/redirect.svelte";
-		import BluePineapple from "./pages/branding/blue-pineapple.svelte";
 
-		function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
-    const isActive = href === "/" ? isCurrent : isPartiallyCurrent || isCurrent;
-
-    // The object returned here is spread on the anchor element's attributes
-    if (isActive) {
-      return { class: "active" };
-    }
-    return {};
-  }
 </script>
 
 <Router>
@@ -33,10 +22,8 @@
 		<Route path="about" component={About}/>
 		<Route path="ui_ux" component={UI_UX}/>
 		<Route path="illustrations" component={Illustrations}/>
-		<Route path="branding/*" component={Branding}>
-			<Redirect to="/blue-pineapple" />
-		</Route>
-		<Route path="blue-pineapple" component={BluePineapple}/>
+		<Route path="branding/*" component={Branding} />
+
 	</main>
 </Router>
 
