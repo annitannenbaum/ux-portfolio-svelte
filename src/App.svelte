@@ -6,7 +6,6 @@
 		import Illustrations from "./pages/illustrations.svelte";
 		import Branding from "./pages/branding.svelte";
 
-	  export let url = "";
 </script>
 
 <Router>
@@ -19,11 +18,12 @@
 	</nav>
 
 	<main>
-		<Route path="/" component={Landing}></Route>
+		<Route path="/" component={Landing}/>
 		<Route path="about" component={About}/>
 		<Route path="ui_ux" component={UI_UX}/>
 		<Route path="illustrations" component={Illustrations}/>
-		<Route path="branding" component={Branding}/>
+		<Route path="branding/*" component={Branding} />
+
 	</main>
 </Router>
 
@@ -35,6 +35,8 @@
 		display: flex;
 		justify-content: flex-end;
 	}
+
+	:global(a[aria-current="page"]) { font-weight: bold; }
 
 	@media screen and (max-width: 900px) {
 		nav {
