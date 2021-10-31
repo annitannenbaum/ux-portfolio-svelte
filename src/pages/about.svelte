@@ -31,6 +31,9 @@
 </main>
 
 <style>
+        p {
+                color: white;
+        }
         h2 {
                 margin: 0;
                 padding: 0;

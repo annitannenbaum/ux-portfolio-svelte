@@ -20,7 +20,7 @@
   }
 
   .illustration {
-    width: 33%;
+    height: 60vh;
     margin: 1rem;
     box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
   }

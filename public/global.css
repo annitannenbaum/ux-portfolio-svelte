@@ -29,8 +29,13 @@ h2 {
 	-webkit-text-stroke-color: #C7B0AE;
 }
 
+h3 {
+	font-weight: bold;
+	color: #6E6E6E;
+}
+
 p {
-	color: white;
+	color: #6E6E6E;
 }
 
 a {
@@ -109,4 +114,29 @@ button:focus {
 	width: 500px;
 	height: 125px;
 	background-image: url("assets/right-corner.svg");
+}
+
+.container {
+	padding: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.images {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.images {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }

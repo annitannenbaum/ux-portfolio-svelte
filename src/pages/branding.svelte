@@ -24,7 +24,7 @@ import { onMount } from "svelte";
     <Link to="petit-family">Petit Family</Link>
     <Link to="a-a">AA</Link>
     <Link to="eisloft">Eisloft</Link>
-    <Link to="vermont-seventeen">Vermont17teen</Link>
+    <Link to="vermont-seventeen">Vermont7teen</Link>
   </nav>
 
   <main>
