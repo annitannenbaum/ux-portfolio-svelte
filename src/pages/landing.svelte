@@ -1,7 +1,7 @@
 <script></script>
 
 <main>
-    <h1>Hi, <img src="/assets/smiley.svg" alt="smiley"></h1>
+    <h1>Hi, <img src="/assets/svg/smiley.svg" alt="smiley"></h1>
     <h1>I'm Anka & I do</h1>
     <h2>UI/UX & Visual Design</h2>
 </main>

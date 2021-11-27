@@ -1,4 +1,22 @@
-<script></script>
+<script>
+  import Image from "../../components/image.svelte";
+
+  const scribble = 'aa-scribble';
+  const scribbleAlt = 'Autotrade Ahrensburg handdrawn design';
+
+  const bcTop = 'aa-businesscard-front';
+  const bcTopAlt = 'Autotrade Ahrensburg business card front';
+
+  const bcBottom = 'aa-businesscard-back';
+  const bcBottomAlt = 'Autotrade Ahrensburg business card back';
+
+  const logoTop = 'aa-logo-2';
+  const logoTopAlt = 'Autotrade Ahrensburg logo alternative';
+
+  const logo = 'aa-logo';
+  const logoAlt = 'Autotrade Ahrensburg logo';
+
+</script>
 
 <main>
   <div class="container">
@@ -7,14 +25,24 @@
       <p>Corporate Design for a car processing company.</p>
     </div>
     <div class="images">
-      <img class="scribble" src="/assets/aa-scribble.png" alt="Autotrade Ahrensburg handdrawn design">
+      <div class="scribble">
+        <Image fileName={scribble} alt={scribbleAlt} />
+      </div>
       <div class="business-cards">
-        <img class="business-card top" src="/assets/aa-businesscard-front.png" alt="Autotrade Ahrensburg business card front">
-        <img class="business-card bottom" src="/assets/aa-businesscard-back.png" alt="Autotrade Ahrensburg business card back">
+        <div class="business-card top">
+          <Image fileName={bcTop} alt={bcTopAlt}/>
+        </div>
+        <div class="business-card">
+          <Image fileName={bcBottom} alt={bcBottomAlt}/>
+        </div>
       </div>
       <div class="logos">
-        <img class="logo top" src="/assets/aa-logo-2.png" alt="Autotrade Ahrensburg logo alternative">
-        <img class="logo" src="/assets/aa-logo.png" alt="Autotrade Ahrensburg logo">
+        <div class="logo">
+          <Image fileName={logoTop} alt={logoTopAlt}/>
+        </div>
+        <div class="logo">
+          <Image fileName={logo} alt={logoAlt}/>
+        </div>
       </div>
     </div>
   </div>
@@ -33,18 +61,14 @@
   }
 
   .business-card {
-    height: 22vh;
+    width: 25vw;
   }
 
   .business-card.top {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
   }
 
   .logo {
-    width: 60%;
-  }
-
-  .logo.top {
     width: 60%;
     margin-bottom: 3.5rem;
   }
@@ -56,9 +80,13 @@
       align-items: center;
     }
 
-    .scribble, .business-card, .business-card.top {
+    .scribble, .business-card {
       width: 90%;
       margin: 2rem 0;
+    }
+
+    .logo {
+      margin: 0 auto;
     }
   }
 </style>

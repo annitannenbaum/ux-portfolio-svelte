@@ -13,7 +13,7 @@
                         <h2>Fashion Brands</h2>
                 </div>
                 <div class="paragraph-container">
-                        <p>Currently based in Hamburg and working at thinfabrics GmbH</p>
+                        <p>Currently based in Hamburg and working at <a href="www.thinfabrics.com">thinfabrics GmbH</a>.</p>
                         <p>
                                 Since 2015 I'm a trained communication designer, but I put my hands into the digital world and
                                 became a UI/UX designer.
@@ -25,12 +25,17 @@
                         <p>
                                 My other passion is to collect sneakers and unfortunately spend way too much money on them.
                         </p>
-                        <img src="assets/peace.svg" alt="peace sign">
+                        <img src="assets/svg/peace.svg" alt="peace sign">
                 </div>
         </div>
 </main>
 
 <style>
+        a {
+                padding: 0;
+                color: white;
+                text-decoration: underline;
+        }
         p {
                 color: white;
         }

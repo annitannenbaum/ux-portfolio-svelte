@@ -103,7 +103,7 @@ button:focus {
 	top: 0;
 	width: 500px;
 	height: 125px;
-	background-image: url("assets/left-corner.svg");
+	background-image: url("assets/svg/left-corner.svg");
 }
 
 .right-corner-gradient {
@@ -113,7 +113,7 @@ button:focus {
 	right: 0;
 	width: 500px;
 	height: 125px;
-	background-image: url("assets/right-corner.svg");
+	background-image: url("assets/svg/right-corner.svg");
 }
 
 .container {
@@ -138,5 +138,6 @@ button:focus {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 90%;
 	}
 }
