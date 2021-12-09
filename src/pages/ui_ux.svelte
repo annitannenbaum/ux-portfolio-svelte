@@ -1,4 +1,23 @@
 <script>
+  import Image from "../components/image.svelte";
+
+  const visualName = 'visual';
+  const visualAlt = 'Plant Lover Visual';
+
+  const coverName = 'cover';
+  const coverAlt = 'Plant Lover Cover Screen';
+
+  const overviewName = 'overview';
+  const overviewAlt = 'Plant Lover Garden Overview';
+
+  const detailName = 'detail';
+  const detailAlt = 'Plant Lover Plant Detail View';
+
+  const dashboardName = 'dashboard';
+  const dashboardAlt = 'Plant Lover Dashboard';
+
+  const mockupName = 'mockup';
+  const mockupAlt = 'Plant Lover Mockup';
 
 </script>
 <main>
@@ -16,7 +35,7 @@
           is well taken care of.
         </p>
       </div>
-      <img class="visual" src="/assets/visual.png" alt="Plant Lover Visual">
+        <Image className={visualName} fileName={visualName} alt={visualAlt} />
       <div class="color-palette">
         <div class="color light-green"></div>
         <div class="color teal"></div>
@@ -31,13 +50,13 @@
     </div>
     <div class="right-content">
       <div class="screens">
-        <img class="cover" src="/assets/cover.png" alt="Plant Lover Cover Screen">
-        <img class="overview" src="/assets/overview.png" alt="Plant Lover Garden Overview">
-        <img class="detail" src="/assets/detail.png" alt="Plant Lover Plant Detail View">
-        <img class="dashboard" src="/assets/dashboard.png" alt="Plant Lover Dashboard">
+        <Image className={coverName} fileName={coverName} alt={coverAlt} />
+        <Image className={overviewName} fileName={overviewName} alt={overviewAlt} />
+        <Image className={detailName} fileName={detailName} alt={detailAlt} />
+        <Image className={dashboardName} fileName={dashboardName} alt={dashboardAlt} />
       </div>
       <div class="mockup-container">
-        <img class="mockup" src="/assets/mockup.png" alt="Plant Lover Mockup">
+        <Image className={mockupName} fileName={mockupName} alt={mockupAlt} />
       </div>
     </div>
   </div>
@@ -79,8 +98,8 @@
   .color {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     margin: .5rem;
+    border-radius: 10px;
     box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
     -webkit-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
     -moz-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
@@ -104,17 +123,6 @@
 
   .beige {
     background-color: #FCFAF2;
-  }
-
-  .visual {
-    width: 90%;
-    max-width: 400px;
-    border-radius: 10px;
-    height: auto;
-    margin: 1rem 0;
-    box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
   }
 
   .fonts {
@@ -147,52 +155,9 @@
     width: 50%;
   }
 
-  .cover, .overview, .dashboard, .detail {
-    height: auto;
-    width: 60%;
-    max-width: 250px;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
-  }
-
-  .cover {
-    left: 0;
-    top: 0;
-  }
-
-  .overview {
-    left: 50px;
-    top: 25px;
-  }
-
-  .detail {
-    left: 100px;
-    top: 50px;
-  }
-
-  .dashboard {
-    left: 150px;
-    top: 75px;
-  }
 
   .mockup-container {
     width: 50%;
-  }
-
-  .mockup {
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    margin-top: 3.5rem;
-    float: right;
-    box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
-
   }
 
   @media screen and (max-width: 1024px) {

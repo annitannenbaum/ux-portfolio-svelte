@@ -6,7 +6,7 @@
   const right = 'juicewrldangel';
   const rightText = 'Man with dreadlocks and a halo';
 
-  const style = 'height: 60vh; margin: 1rem; box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1); @media screen and (max-width: 1024px) { width: 100%; }';
+  const className = 'illustration';
 </script>
 
 <main>
@@ -15,8 +15,8 @@
   <div class="right-corner-gradient"></div>
 
   <div class="illustrations-container">
-    <Image style={style} fileName={left} alt={leftText} />
-    <Image style={style} fileName={right} alt={rightText} />
+      <Image className={className} fileName={left} alt={leftText} />
+      <Image className={className} fileName={right} alt={rightText} />
   </div>
 </main>
 

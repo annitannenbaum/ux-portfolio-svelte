@@ -129,6 +129,136 @@ button:focus {
 	justify-content: center;
 }
 
+/* IMG CLASS SECTION */
+
+/* ILLUSTRATION PAGE */
+
+.illustration {
+	width: 20vw;
+	border-radius: 10px;
+	height: auto;
+	margin: 1rem;
+	box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
+}
+
+/* UI UX PAGE */
+
+.visual {
+	width: 90%;
+	max-width: 400px;
+	border-radius: 10px;
+	height: auto;
+	margin: 1rem 0;
+	box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+}
+
+.cover, .overview, .dashboard, .detail {
+	height: auto;
+	width: 60%;
+	max-width: 250px;
+	position: absolute;
+	border-radius: 10px;
+	box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+}
+
+.cover {
+	left: 0;
+	top: 0;
+}
+
+.overview {
+	left: 50px;
+	top: 25px;
+}
+
+.detail {
+	left: 100px;
+	top: 50px;
+}
+
+.dashboard {
+	left: 150px;
+	top: 75px;
+}
+
+.mockup {
+	border-radius: 10px;
+	width: 90%;
+	max-width: 400px;
+	height: auto;
+	margin-top: 3.5rem;
+	float: right;
+	box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.1);
+
+}
+
+/* PETIT FAMILY PAGE */ 
+
+.petit-family-visual {
+	max-height: 60vh;
+	max-width: 45vw;
+	width: auto;
+	height: auto;
+}
+
+/* AUTOTRADE AHRENSBURG PAGE  */
+
+.aa-scribble {
+	width: 30vw;
+	margin: 0 2rem;
+}
+.business-card {
+	width: 15vw;
+}
+.business-card.top {
+	margin-bottom: 3.5rem;
+}
+.logo {
+	width: 60%;
+}
+.logo.top {
+	width: 60%;
+	margin-bottom: 3.5rem;
+}
+
+/* EISLOFT PAGE */
+
+.front-view {
+  max-width: 70%;
+  width: auto;
+  max-height: 60vh;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 2rem;
+  box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+}
+
+/* VERMONT17 PAGE */
+
+.logo-v17 {
+  width: 65%;
+}
+
+.hoodie {
+  border-radius: 10px;
+  box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
+  margin: 0 2rem;
+  max-width: 25vw;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+}
+
 @media screen and (max-width: 1024px) {
 	.container {
 		flex-direction: column;
@@ -139,5 +269,23 @@ button:focus {
 		justify-content: center;
 		align-items: center;
 		width: 90%;
+	}
+
+	.illustration {
+		width: 100%;
+	}
+
+	.aa-scribble, .business-card, .logo {
+		width: 90%;
+		margin: 2rem auto;
+	}
+
+	.hoodie {
+    max-width: 60vw;
+    margin: 2rem 0;
+  }
+
+	.petit-family-visual {
+		max-width: 90vw;
 	}
 }

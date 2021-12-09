@@ -1,4 +1,21 @@
-<script></script>
+<script>
+  import Image from "../../components/image.svelte";
+
+  const logoClass = 'logo-v17';
+  const logoName = 'vermont7teen-logo';
+  const logoAlt = 'Vermont7teen logo';
+
+  const visualName = 'vermont7teen-visual';
+  const visualAlt = 'Vermont7teen visual';
+
+  const hoodieClass = 'hoodie';
+  const hoodieFrontName = 'vermont7teen-front';
+  const hoodieFrontAlt = 'Vermont7teen hoodie front';
+  
+  const hoodieBackName = 'vermont7teen-back';
+  const hoodieBackAlt = 'Vermont7teen hoodie back';
+
+</script>
 
 <main>
   <div class="container">
@@ -8,15 +25,15 @@
     </div>
     <div class="images">
       <div class="logos">
-        <img class="logo" src="/assets/vermont7teen-logo.png" alt="Vermont7teen logo">
+        <Image className={logoClass} fileName={logoName} alt={logoAlt} />
         <div class="colors">
           <div class="color red"></div>
           <div class="color black"></div>
         </div>
-        <img class="logo" src="/assets/vermont7teen-visual.png" alt="Vermont7teen visual">
+        <Image className={logoClass} fileName={visualName} alt={visualAlt} />
       </div>
-      <img class="hoodie" src="/assets/vermont7teen-front.png" alt="Vermont7teen hoodie front">
-      <img class="hoodie" src="/assets/vermont7teen-back.png" alt="Vermont7teen hoodie back">
+      <Image className={hoodieClass} fileName={hoodieFrontName} alt={hoodieFrontAlt} />
+      <Image className={hoodieClass} fileName={hoodieBackName} alt={hoodieBackAlt} />
     </div>
   </div>
 </main>
@@ -26,26 +43,10 @@
 .logos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 25vw;
+  width: 20vw;
+  margin-left: 2rem;
 }
 
-.logo {
-  width: 65%;
-}
-
-.hoodie {
-  border-radius: 10px;
-  box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-  -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-  margin: 0 2rem;
-  max-width: 25vw;
-  max-height: 60vh;
-  width: auto;
-  height: auto;
-}
 
 .colors {
   display: flex;
@@ -74,11 +75,6 @@
 @media screen and (max-width: 1024px) {
   .logos {
     width: 80%;
-  }
-
-  .hoodie {
-    max-width: 60vw;
-    margin: 2rem 0;
   }
 }
 

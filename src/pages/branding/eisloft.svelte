@@ -1,4 +1,11 @@
-<script></script>
+<script>
+  import Image from "../../components/image.svelte";
+
+  const shopClass = 'front-view';
+  const shopName = 'eisloft-mockup';
+  const shopAlt = 'Eisloft shop front view';
+
+</script>
 
 <main>
   <div class="container">
@@ -7,10 +14,10 @@
       <p>Corporate Design for an ice cream shop.</p>
     </div>
     <div class="images">
-      <img class="front-view" src="/assets/eisloft-mockup.png" alt="Eisloft shop front view">
+      <Image className={shopClass} fileName={shopName} alt={shopAlt} />
 
       <div class="colors-illustrations">
-        <img src="/assets/eisloft-logo.svg" alt="Eisloft logo">
+        <img src="/assets/svg/eisloft-logo.svg" alt="Eisloft logo">
         <div class="color-palette">
           <div class="color light-grey"></div>
           <div class="color dark-grey"></div>
@@ -23,8 +30,8 @@
           <div class="color terracotta"></div>
         </div>
         <div class="illustrations">
-          <img src="/assets/eisloft-icecream-illustration.svg" alt="Eisloft icecream illustration">
-          <img src="/assets/eisloft-filter-illustration.svg" alt="Eisloft coffee filter illustration">
+          <img src="/assets/svg/eisloft-icecream-illustration.svg" alt="Eisloft icecream illustration">
+          <img src="/assets/svg/eisloft-filter-illustration.svg" alt="Eisloft coffee filter illustration">
         </div>
       </div>
 
@@ -34,17 +41,6 @@
 
 <style>
 
-.front-view {
-  max-width: 70%;
-  width: auto;
-  max-height: 60vh;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 2rem;
-  box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-  -moz-box-shadow: 10px -10px 21px 1px rgba(0,0,0,0.2);
-}
 
 .colors-illustrations {
   width: 50%;

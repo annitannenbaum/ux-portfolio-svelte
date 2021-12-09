@@ -1,4 +1,15 @@
-<script></script>
+<script>
+  import Image from "../../components/image.svelte";
+
+  const visualClass = 'petit-family-visual';
+
+  const firstVisualName = 'petitfamily';
+  const firstVisualAlt = 'Petit Family Logo';
+
+  const secondVisualName = 'petitfamily2';
+  const secondVisualAlt = 'Petit Family Branding';
+
+</script>
 
 <main>
   <div class="container">
@@ -7,25 +18,8 @@
       <p>Corporate Design for Baby & Young Fashion.</p>
     </div>
     <div class="images">
-      <img src="/assets/petitfamily.png" alt="Petit Family Logo">
-      <img src="/assets/petitfamily2.png" alt="Petit Family Branding">
+      <Image className={visualClass} fileName={firstVisualName} alt={firstVisualAlt} />
+      <Image className={visualClass} fileName={secondVisualName} alt={secondVisualAlt} />
     </div>
   </div>
 </main>
-
-<style>
-
-  img {
-    max-height: 60vh;
-    max-width: 45vw;
-    width: auto;
-    height: auto;
-  }
-
-  @media screen and (max-width: 1024px) {
-    img {
-      max-width: 90vw;
-    }
-  }
-
-</style>
