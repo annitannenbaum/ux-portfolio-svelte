@@ -1,4 +1,13 @@
-<script></script>
+<script>
+  import Image from "../components/image.svelte";
+
+  const left = 'juicewrldsmiley';
+  const leftText = 'Man with dreadlocks and smileys for eyes';
+  const right = 'juicewrldangel';
+  const rightText = 'Man with dreadlocks and a halo';
+
+  const className = 'illustration';
+</script>
 
 <main>
   <div class="left-corner-gradient"></div>
@@ -6,8 +15,8 @@
   <div class="right-corner-gradient"></div>
 
   <div class="illustrations-container">
-    <img class="illustration" src="/assets/juicewrldsmiley.png" alt="Man with dreadlocks and smileys for eyes">
-    <img class="illustration" src="/assets/juicewrldangel.png" alt="Man with dreadlocks and a halo">
+      <Image className={className} fileName={left} alt={leftText} />
+      <Image className={className} fileName={right} alt={rightText} />
   </div>
 </main>
 
@@ -19,19 +28,9 @@
     padding: 5rem;
   }
 
-  .illustration {
-    height: 60vh;
-    margin: 1rem;
-    box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.1);
-  }
-
   @media screen and (max-width: 1024px) {
     .illustrations-container {
       flex-direction: column;
-    }
-
-    .illustration {
-      width: 100%;
     }
   }
 </style>
