@@ -1,4 +1,8 @@
 <script>
+        import Image from "../components/image.svelte";
+        
+        const selfieName = 'cover-selfie';
+        const selfieAlt = 'A picture of Anka';
 </script>
 
 <main>
@@ -28,6 +32,7 @@
                         <img src="assets/svg/peace.svg" alt="peace sign">
                 </div>
         </div>
+        <Image className={selfieName} fileName={selfieName} alt={selfieAlt} />
 </main>
 
 <style>
@@ -60,6 +65,8 @@
         @media screen and (max-width: 1024px) {
                 .about-container {
                         flex-direction: column;
+                        align-items: flex-start;
+                        margin-top: 2rem;
                 }
 
                 .paragraph-container {

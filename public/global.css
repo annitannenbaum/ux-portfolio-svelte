@@ -131,6 +131,15 @@ button:focus {
 
 /* IMG CLASS SECTION */
 
+/* ABOUT PAGE */
+
+.cover-selfie {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 75%;
+}
+
 /* ILLUSTRATION PAGE */
 
 .illustration {
@@ -201,7 +210,7 @@ button:focus {
 /* PETIT FAMILY PAGE */ 
 
 .petit-family-visual {
-	max-height: 60vh;
+	max-height: 50vh;
 	max-width: 45vw;
 	width: auto;
 	height: auto;
@@ -260,6 +269,9 @@ button:focus {
 }
 
 @media screen and (max-width: 1024px) {
+	html, body {
+		height: auto;
+	}
 	.container {
 		flex-direction: column;
 	}
